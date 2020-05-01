@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { setColor, setFont } from "../../styles";
+import { setColors, setFont } from '../../styles';
 const Globals = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Courgette|Lato:400,700');
 
@@ -10,8 +10,8 @@ const Globals = createGlobalStyle`
 }
 body{
  font-size:100%;
- color:${setColor.mainBlack};
- background:${setColor.mainWhite};
+ color:${setColors.mainBlack};
+ background:${setColors.mainWhite};
  ${setFont.main};
  
 }

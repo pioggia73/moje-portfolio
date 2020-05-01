@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 
-export const setColor = {
+export const setColors = {
   primaryColor: "#af9a7d",
   mainWhite: "#fff",
   mainBlack: "#222",

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {
-  setColor,
+  setColors,
   setRem,
   setLetterSpacing,
   setFont,
@@ -9,18 +9,18 @@ import {
 } from "../../styles";
 export const PrimaryBtn = styled.button`
   display: inline-block;
-  background: ${setColor.primaryColor};
-  color: ${setColor.mainWhite};
+  background: ${setColors.primaryColor};
+  color: ${setColors.mainWhite};
   text-transform: capitalize;
   font-size: ${setRem(18)};
   ${setFont.main};
   padding: ${setRem(17)} ${setRem(36)};
-  ${setBorder({ color: setColor.primaryColor })};
+  ${setBorder({ color: setColors.primaryColor })};
   ${setLetterSpacing(3)};
   ${setTransition()};
   &:hover {
     background: transparent;
-    color: ${setColor.primaryColor};
+    color: ${setColors.primaryColor};
   }
   ${props =>
     `margin: ${props.t || 0} ${props.r || 0} ${props.b || 0} ${props.l || 0}}`};

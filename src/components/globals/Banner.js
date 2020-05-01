@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css, keyframes } from "styled-components";
 import {
-  setColor,
+  setColors,
   setRem,
   setLetterSpacing,
   setBorder,
@@ -45,13 +45,13 @@ const BannerWrapper = styled(Banner)`
   text-align: center;
   padding: ${setRem(60)} ${setRem(32)};
   ${setLetterSpacing(3)}
-  color: ${setColor.mainWhite};
+  color: ${setColors.mainWhite};
   h1 {
     text-transform: capitalize;
     font-size: ${setRem(48)};
-    color: ${setColor.primaryColor};
+    color: ${setColors.primaryColor};
     span {
-      color: ${setColor.mainWhite};
+      color: ${setColors.mainWhite};
     }
   }
   p {
@@ -59,7 +59,7 @@ const BannerWrapper = styled(Banner)`
     margin: 0 auto;
   }
   ${media.tablet` width: 70vw;
-    ${setBorder({ width: "6px", color: setColor.primaryColor })};
+    ${setBorder({ width: "6px", color: setColors.primaryColor })};
     p {
       width: 75%;
     }`}
