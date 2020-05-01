@@ -47,6 +47,6 @@ const NavWrapper = styled.nav`
     .nav-icon {
         font-size: ${setRem(30)};
         cursor: pointer;
-        color: ${setColors.colorGold};
+        color: ${setColors.primaryColor};
     }
 `;

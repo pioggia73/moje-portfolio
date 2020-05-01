@@ -13,13 +13,15 @@ body{
  color:${setColors.mainBlack};
  background:${setColors.mainWhite};
  ${setFont.main};
+
+ a {text-decoration: none};
  
 }
 h1{
  font-size:3em;line-height:1.2;margin-bottom:0.5em
 }
 h2{
- font-size:2em;margin-bottom:0.75em
+ font-size:2em;margin-bottom:0.75em; color: ${setColors.lightBlue};
 }
 h3{
  font-size:1.5em;line-height:1;margin-bottom:1em

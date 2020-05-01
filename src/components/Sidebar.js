@@ -28,11 +28,11 @@ export default function Sidebar() {
 
 const SideWrapper = styled.nav`
     position: fixed;
-    top: ${setRem(59)};
+    top: ${setRem(62)};
     left: 0;
     width: 100%;
     height: 100%;
-    background: ${setColors.colorGold};
+    background: ${setColors.primaryColor};
     border-right: 2px solid ${setColors.lightBlue};
     z-index: 1;
     ${setTransition()};
@@ -56,7 +56,7 @@ const SideWrapper = styled.nav`
         margin-bottom: ${setRem(8)};
 
         &:hover {
-            color: ${setColors.colorWhite};
+            color: ${setColors.mainWhite};
             text-decoration: none;
         }
 
@@ -82,11 +82,11 @@ const SideWrapper = styled.nav`
         
         &:hover::before {
             transform: scaleY(1);
-            width: 100vw;  
+            width: 100%;  
         }
 
         &:hover .link-icon {
-            color: ${setColors.colorWhite};
+            color: ${setColors.mainWhite};
         }
     }
 
