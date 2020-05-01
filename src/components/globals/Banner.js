@@ -27,14 +27,14 @@ const fadeIn = (start, point, end) => {
     animation: ${animation} 3s ease-in-out;
   `;
 };
-const Banner = ({ className, title, text, children, greeting }) => {
+const Banner = ({ className, title, subtitle, children }) => {
   return (
     <div className={className}>
       <h1>
-        {greeting} <span>{title}</span>{" "}
+        {title}
       </h1>
       <div className="info">
-        <p>{text}</p>
+        <h2>{subtitle}</h2>
         {children}
       </div>
     </div>
