@@ -22,7 +22,7 @@ export const setBackground = ({
   color = "rgba(0,0,0,0)"
 } = {}) => {
   return `background: linear-gradient(${color}, ${color}),
-    url(${img}) center/cover fixed no-repeat`;
+    url(${img}) center/cover no-repeat`;
 };
 
 export const setRem = (number = 16) => {
