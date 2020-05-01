@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import {Route, Switch} from 'react-router-dom';
+
 import Home from "./pages/Home";
 import Default from "./pages/Default";
 import Navbar from "../src/components/Navbar";
 import Sidebar from "../src/components/Sidebar";
+import CoursesPage from "../src/pages/CoursesPage";
+import ContactPage from "../src/pages/ContactPage";
+
 import GlobalStyles from "./components/globals/GlobalStyles";
+
+
 class App extends Component {
   render() {
     return (
@@ -15,6 +21,8 @@ class App extends Component {
         <Sidebar />
         <Switch>
             <Route exact path= "/" component={Home} />
+            <Route exact path= "/courses" component={CoursesPage} />
+            <Route exact path= "/contact" component={ContactPage} />
             <Route component = {Default} />
         </Switch>
         

@@ -66,8 +66,60 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
 
 export const setTransition = ({
   property = "all",
-  time = "0.3s",
+  time = "1s",
   timing = "ease-in-out"
 } = {}) => {
   return `transition:${property} ${time} ${timing}`;
 };
+
+
+{/*
+export default styled(Contact)
+`
+
+    .form-container {
+
+    .form-group {
+    input,
+    textarea {
+        font-size: ${setRem(20)};
+        padding: ${setRem(20)} ${setRem(40)};
+        border-radius: 2px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #e0e0e0;
+        display: block;
+       
+        &:focus,
+        &:focus {
+            outline: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            ${setShadow()};
+            border-bottom: 2px solid #000033;
+        }
+    
+        &:focus:invalid {
+            border-bottom: 2px solid #af9a7d !important;
+
+        }
+    };   
+
+    input:placeholder-shown + label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+    
+    label {
+        font-size: ${setRem(12)};
+        margin: ${setRem(10)} 0 0 ${setRem(35)};
+        display: block;
+       ${setTransition()};
+    }
+        }
+    }
+`;
+  */}
