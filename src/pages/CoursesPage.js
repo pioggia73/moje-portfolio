@@ -30,7 +30,7 @@ export default styled(CoursesPage)`
 
         display: grid;
         grid-row-gap: 2rem;
-        width: 80vw;
+        width: 90vw;
         margin: 0 auto; 
         justify-content: center;  
     }
