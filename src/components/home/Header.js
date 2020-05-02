@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 import Hero from "../globals/Hero";
-import homeImg from "../../images/homeBcg.jpg";
+import homeImg from "../../images/3.jpg";
 import Banner from "../globals/Banner";
 import { PrimaryBtn } from "../globals/Buttons";
 const Header = () => {

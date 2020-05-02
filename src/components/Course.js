@@ -28,7 +28,7 @@ export default styled(Course)`
     justify-content: space-between;
     line-height: 1.5rem;
     margin-bottom: ${setRem(-5)};
-    padding: ${setRem(7)} ${setRem(22)};
+    padding: ${setRem(7)} ${setRem(18)};
     ${setBorder({width: '1px', color: '#e0e0e0'})};
     ${setTransition};
    
