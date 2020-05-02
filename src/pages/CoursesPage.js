@@ -29,9 +29,9 @@ export default styled(CoursesPage)`
     .courses-container {
 
         display: grid;
-        grid-template-rows: repeat(auto-fit(minmax(4rem, 1fr)));
         grid-row-gap: 2rem;
         width: 80vw;
-        margin: 0 auto;   
+        margin: 0 auto; 
+        justify-content: center;  
     }
 `;

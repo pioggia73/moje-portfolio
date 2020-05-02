@@ -27,7 +27,6 @@ export default styled(Course)`
     display: flex;
     justify-content: space-between;
     line-height: 1.5rem;
-    margin: 0 auto;
     margin-bottom: ${setRem(-5)};
     padding: ${setRem(7)} ${setRem(22)};
     ${setBorder({width: '1px', color: '#e0e0e0'})};
@@ -40,9 +39,9 @@ export default styled(Course)`
     }
 
     .info {
-        flex: 0 0 70%;
+        flex: 70%;
         padding: ${setRem(3)} ${setRem(5)}};
-        font-size: ${setRem(15)};    
+        font-size: ${setRem(13)};    
     }
 
     span {align-self: center};

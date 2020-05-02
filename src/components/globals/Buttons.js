@@ -7,17 +7,20 @@ import {
   setBorder,
   setTransition
 } from "../../styles";
+
 export const PrimaryBtn = styled.button`
+
   display: inline-block;
   background: ${setColors.primaryColor};
   color: ${setColors.mainWhite};
   text-transform: capitalize;
   font-size: ${setRem(18)};
   ${setFont.main};
-  padding: ${setRem(17)} ${setRem(36)};
+  padding: ${setRem(15)} ${setRem(30)};
   ${setBorder({ color: setColors.primaryColor })};
   ${setLetterSpacing(3)};
   ${setTransition()};
+
   &:hover {
     background: transparent;
     color: ${setColors.primaryColor};
@@ -29,5 +32,8 @@ export const PrimaryBtn = styled.button`
 `;
 
 export const SmallBtn = styled(PrimaryBtn)`
-  padding: ${setRem(9)} ${setRem(12)};
+
+  padding: ${setRem(9)} ${setRem(10)};
+  font-size: ${setRem(9)};
+
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../components/globals/Title';
 import styled from 'styled-components';
 import {PrimaryBtn} from '../components/globals/Buttons';
-import {setTransition, setRem, setShadow} from '../styles';
+import {setTransition, setRem, setShadow, setColors} from '../styles';
 import Section from '../components/globals/Section'
 
 const Contact = ({className}) => {
@@ -47,6 +47,7 @@ const Contact = ({className}) => {
 
                     <div className = "form-group">
                        <PrimaryBtn
+                        t="2rem"
                         type = "submit"
                         value = "Send"
                         className = "form-button">
@@ -54,7 +55,6 @@ const Contact = ({className}) => {
                         </PrimaryBtn>
                     </div> 
             </form>
-        
     </Section> 
    
     )
@@ -65,19 +65,48 @@ const Contact = ({className}) => {
 export default styled (Contact)`
 
     .form-container {
-        width: 80vw;
+        width: 70vw;
         margin: 0 auto;
     }
 
     .form-group {
         input,
         textarea {
-            font-size: ${setRem(20)};
-            padding: ${setRem(16)} ${setRem(30)};
+
+            font-size: ${setRem(16)};
+            padding: ${setRem(10)} ${setRem(30)};
+            border-radius: 2px;
+            border: none;
+            border-bottom: 2px solid ${setColors.mainGrey};
+            display: block;
+            width: 100%;
+
+            &:focus {
+
+                outline: none;
+                border: none;
+                border-bottom: 2px solid ${setColors.lightBlue};
+                ${setShadow.light};     
+            }
+
+            &:focus:invalid {
+                border-bottom: 2px solid ${setColors.primaryColor};
+            }
         }
     }
 
+    input:placeholder-shown + label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
 
+    label {
+        font-size: ${setRem(12)};
+        margin: ${setRem(10)} 0 0 ${setRem(35)};
+        display: block;
+        ${setTransition()};
+    }
 
-
+    
 `;

@@ -18,10 +18,10 @@ body{
  
 }
 h1{
- font-size:3em;line-height:1.2;margin-bottom:0.5em
+ font-size:2.3rem;line-height:1.2;margin-bottom:0.5em
 }
 h2{
- font-size:2em;margin-bottom:0.75em; color: ${setColors.lightBlue};
+ font-size:1.8rem;margin-bottom:0.75em; color: ${setColors.lightBlue};
 }
 h3{
  font-size:1.5em;line-height:1;margin-bottom:1em

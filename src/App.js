@@ -7,9 +7,9 @@ import Navbar from "../src/components/Navbar";
 import Sidebar from "../src/components/Sidebar";
 import CoursesPage from "../src/pages/CoursesPage";
 import ContactPage from "../src/pages/ContactPage";
+import PortfolioPage from "../src/pages/PortfolioPage"
 
 import GlobalStyles from "./components/globals/GlobalStyles";
-
 
 class App extends Component {
   render() {
@@ -23,6 +23,7 @@ class App extends Component {
             <Route exact path= "/" component={Home} />
             <Route exact path= "/courses" component={CoursesPage} />
             <Route exact path= "/contact" component={ContactPage} />
+            <Route exact path= "/portfolio" component={PortfolioPage} />
             <Route component = {Default} />
         </Switch>
         
