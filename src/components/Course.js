@@ -39,7 +39,7 @@ export default styled(Course)`
     }
 
     .info {
-        flex: 70%;
+        flex: 65%;
         padding: ${setRem(3)} ${setRem(5)}};
         font-size: ${setRem(13)};    
     }

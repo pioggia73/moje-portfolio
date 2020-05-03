@@ -14,7 +14,7 @@ const PortfolioPage = ({className}) => {
                 const {projects} = value 
 
                     return (
-                        <Section className={className}>
+                        <Section className = {className} color='${setColors.lightGrey}'>
                             <Title center title="my projects"/>
                             <div className="projects-container">
                                 {projects.map(project => 
@@ -25,17 +25,17 @@ const PortfolioPage = ({className}) => {
         }}
         </ProductConsumer>
     )
-}
+};
 
 export default styled(PortfolioPage)`
 
-
     .projects-container {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
+
+        margin: 0 auto;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-column-gap: 2rem;   
     }
 
 
