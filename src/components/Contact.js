@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../components/globals/Title';
 import styled from 'styled-components';
 import {PrimaryBtn} from '../components/globals/Buttons';
-import {setTransition, setRem, setShadow, setColors} from '../styles';
+import {setTransition, setRem, setShadow, setColors, media} from '../styles';
 import Section from '../components/globals/Section'
 
 const Contact = ({className}) => {
@@ -46,7 +46,7 @@ const Contact = ({className}) => {
                     </div>
 
                     <div className = "form-group">
-                       <PrimaryBtn
+                       <PrimaryBtn 
                         t="2rem"
                         type = "submit"
                         value = "Send"
@@ -65,19 +65,25 @@ const Contact = ({className}) => {
 export default styled (Contact)`
 
     .form-container {
-        width: 70vw;
+        width: 80vw;
         margin: 0 auto;
+
+        ${media.desktop` width: 50vw;
+                    font-size: ${setRem(20)};
+                    padding: ${setRem(20)} ${setRem(15)};          
+        `};
     }
 
     .form-group {
+
         input,
         textarea {
 
             font-size: ${setRem(16)};
             padding: ${setRem(10)} ${setRem(30)};
-            border-radius: 2px;
+            border-radius: ${setRem(2)};
             border: none;
-            border-bottom: 2px solid ${setColors.mainGrey};
+            border-bottom: ${setRem(2)} solid ${setColors.mainGrey};
             display: block;
             width: 100%;
 
@@ -85,12 +91,12 @@ export default styled (Contact)`
 
                 outline: none;
                 border: none;
-                border-bottom: 2px solid ${setColors.lightBlue};
+                border-bottom: ${setRem(2)} solid ${setColors.lightBlue};
                 ${setShadow.light};     
             }
 
             &:focus:invalid {
-                border-bottom: 2px solid ${setColors.primaryColor};
+                border-bottom: ${setRem(2)} solid ${setColors.primaryColor};
             }
         }
     }
@@ -106,7 +112,5 @@ export default styled (Contact)`
         margin: ${setRem(10)} 0 0 ${setRem(35)};
         display: block;
         ${setTransition()};
-    }
-
-    
+    } 
 `;

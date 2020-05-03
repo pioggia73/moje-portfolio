@@ -20,15 +20,15 @@ export const PrimaryBtn = styled.button`
   ${setBorder({ color: setColors.primaryColor })};
   ${setLetterSpacing(3)};
   ${setTransition()};
-
-  &:hover {
-    background: transparent;
-    color: ${setColors.primaryColor};
-  }
   ${props =>
     `margin: ${props.t || 0} ${props.r || 0} ${props.b || 0} ${props.l || 0}}`};
   text-decoration: none;
   cursor: pointer;
+
+    &:hover {
+      background: transparent;
+      color: ${setColors.primaryColor};
+    }
 `;
 
 export const SmallBtn = styled(PrimaryBtn)`
