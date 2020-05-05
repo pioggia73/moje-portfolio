@@ -39,7 +39,8 @@ export default styled(Footer)`
         p {
             color: ${setColors.mainGrey};
             text-transform: capitalize;
-            align-self: center;  
+            align-self: center; 
+            font-size: ${setRem(16)}; 
         }  
     }
 
