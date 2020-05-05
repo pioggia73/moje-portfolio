@@ -39,5 +39,10 @@ export const coursesData = [
         icon: <FaCheck className = "course-icon"/>,
         text: 'Complete React Developer in 2020 (w/Redux, Hooks, GraphQL)',
         path: 'https://www.udemy.com/course/complete-react-developer-zero-to-mastery/'
+    }, {
+        id: 8,
+        icon: <FaCheck className = "course-icon" />,
+        text: "React Styled Components Tutorial and Project Course",
+        path: "https://www.udemy.com/course/styled-components-tutorial-and-project-course"
     }
 ]

@@ -5,7 +5,7 @@ import {ProductConsumer} from '../context';
 import SingleProject from '../components/SingleProject';
 import Section from '../components/globals/Section';
 import Title from '../components/globals/Title';
-
+import Footer from '../components/globals/Footer';
 import {setRem} from '../styles';
 
 
@@ -17,14 +17,14 @@ const PortfolioPage = ({className}) => {
 
                     return (
                         <>
-                        <Section className = {className} color='${setColors.lightGrey}'>
+                        <Section className = {className}>
                             <Title center title="my projects"/>
                             <div className="projects-container">
                                 {projects.map(project => 
                                     <SingleProject key={projects.id} project={project}/>)}
                             </div> 
                         </Section>
-                       
+                        <Footer />
                         </>
             )
         }}

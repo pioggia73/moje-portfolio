@@ -11,9 +11,10 @@ class ProductProvider extends Component {
     state = {
         sidebarOpen: false,
         links: linkData,
-        socialLinks: socialData,
+        socialData: socialData,
         courses: coursesData,
-        projects: portfolioData
+        projects: portfolioData,
+    
     }
     handleSidebar = () => {
         this.setState({sidebarOpen: !this.state.sidebarOpen})

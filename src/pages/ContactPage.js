@@ -3,6 +3,7 @@ import React from 'react';
 import Contact from '../components/Contact';
 import Hero from '../components/globals/Hero';
 import ContactBcg from '../images/ContactBcg.jpg';
+import Footer from '../components/globals/Footer';
 
 
 export default function ContactPage() {
@@ -14,6 +15,7 @@ export default function ContactPage() {
                 <Hero img = {ContactBcg} />
                 <Contact />
             </section>
+            <Footer />
         </>
     )
 };

@@ -1,7 +1,7 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import {ProductConsumer} from '../context';
-import {setRem, setColors, setLetterSpacing, setTransition, setShadow, setBorder} from '../styles';
+import {setRem, setColors, setLetterSpacing, setTransition, setShadow} from '../styles';
 import {SmallBtn} from '../components/globals/Buttons';
 
 const SingleProject = ({project, className}) => {
@@ -45,8 +45,7 @@ export default styled(SingleProject)`
 
         &:hover img {
             opacity: .3;
-            transform: scale(1.1);
-            
+            transform: scale(1.1);  
         }
 
         .path-btn {

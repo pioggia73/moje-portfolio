@@ -1,12 +1,14 @@
 import React from 'react';
+import {ReactRouter} from 'react-router-dom'
 import Title from '../components/globals/Title';
 import styled from 'styled-components';
 import {PrimaryBtn} from '../components/globals/Buttons';
 import {setTransition, setRem, setShadow, setColors, media} from '../styles';
 import Section from '../components/globals/Section'
 
-const Contact = ({className}) => {
+const Contact = ({className, props}) => {
     
+    console.log(props)
     return (
         <Section className={className}>
         
@@ -23,7 +25,7 @@ const Contact = ({className}) => {
                         className = "form-control"
                         placeholder = "full name" required
                         />
-                        <label  for= "name" className= "form-label">Full name</label>
+                        <label for= "name" className= "form-label">Full name</label>
                     </div>
 
                     <div className = "form-group">

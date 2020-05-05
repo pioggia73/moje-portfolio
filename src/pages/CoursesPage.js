@@ -6,6 +6,7 @@ import Section from "../components/globals/Section";
 import Title from "../components/globals/Title";
 
 
+
 const CoursesPage = ({className, color}) => {
     return <ProductConsumer>
     
@@ -19,6 +20,7 @@ const CoursesPage = ({className, color}) => {
                                 return <Course key={course.id} course={course}/>
                             })}
                         </ul>
+                       
                 </Section>   
                     }}
             </ProductConsumer>

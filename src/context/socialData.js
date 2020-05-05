@@ -5,12 +5,12 @@ export const socialData = [
     
     {
         id: 1,
-        icon: <FaGithub className = "icon" />,
-        url: 'http://www.github.com'
+        icon: <FaGithub />,
+        url: 'https://github.com/pioggia73/moje-portfolio'
     }, 
         {
             id: 2,
-            icon: <FaLinkedin className = "icon" />,
+            icon: <FaLinkedin />,
             url: 'http://www.linkedin.com'
     }
 ]
