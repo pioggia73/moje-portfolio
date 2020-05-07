@@ -1,5 +1,4 @@
 import React from 'react';
-import {ReactRouter} from 'react-router-dom'
 import Title from '../components/globals/Title';
 import styled from 'styled-components';
 import {PrimaryBtn} from '../components/globals/Buttons';
@@ -8,7 +7,6 @@ import Section from '../components/globals/Section'
 
 const Contact = ({className, props}) => {
     
-    console.log(props)
     return (
         <Section className={className}>
         

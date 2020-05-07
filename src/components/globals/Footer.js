@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {setColors, setRem} from '../../styles';
+import {setColors, setRem, setTransition, media} from '../../styles';
 import {ProductConsumer} from '../../context' ;
 
 const Footer = ({className})  => {
@@ -31,16 +31,21 @@ const Footer = ({className})  => {
 export default styled(Footer)`
 
     background: ${setColors.mainBlack};
-    padding: ${setRem(16)};
     display: flex;
     justify-content: space-between;
-   
+    padding: ${setRem(15)} ${setRem(25)};
+
+     ${media.desktop `padding:${setRem(15)} ${setRem(15)};`};
+
     .footer-info {
+        align-self: center;
+
         p {
             color: ${setColors.mainGrey};
             text-transform: capitalize;
-            align-self: center; 
-            font-size: ${setRem(16)}; 
+            font-size: ${setRem(13)}; 
+            
+            ${media.desktop `font-size: ${setRem(17)};`};
         }  
     }
 
@@ -49,12 +54,12 @@ export default styled(Footer)`
 
        .icon {
            color: ${setColors.lightGrey};
-           font-size: ${setRem(16)};
+           font-size: ${setRem(20)};
            padding: ${setRem(16)};
            align-self: center;
+           ${setTransition};
+
+           &:hover {color: ${setColors.primaryColor};}
        }
     }
-
-
-
 `;
