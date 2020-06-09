@@ -31,8 +31,8 @@ export const portfolioData = [
         id: 4,
         img: project2,
         name: 'Tech Store',
-        sourcePath: 'https://github.com/pioggia73/tech-store',
-        pagePath: 'https://tech-store-monika.netlify.app'
+        sourcePath: 'https://github.com/pioggia73/vintage-tech-store',
+        pagePath: 'https://vintage-tech-store.netlify.app'
     }, {
         id: 5,
         img: project5,
