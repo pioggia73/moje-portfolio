@@ -36,7 +36,6 @@ export default styled(SingleProject)`
         position: relative;
         overflow: hidden;
         
-
         img { 
             width: 100%;
             display: block;
@@ -68,7 +67,6 @@ export default styled(SingleProject)`
         background: ${setColors.lightBlue};
         padding: ${setRem(10)} ${setRem(8)}};
         
-
         h6 {
             ${setLetterSpacing()};
             color: ${setColors.mainWhite};

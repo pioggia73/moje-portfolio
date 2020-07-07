@@ -17,12 +17,12 @@ export const coursesData = [
     }, {
         id: 3,
         icon: <FaCheck className = "course-icon"/>,
-        text: 'Bootstrap 4 Tutorial and 10 Projects Course',
-        path: 'https://www.udemy.com/course/bootstrap-4-beta-ultimate-projects-course/'
+        text: 'The Complete Web Developer in 2020',
+        path: 'https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/'
     }, {
         id: 4,
         icon: <FaCheck className = "course-icon"/>,
-        text: 'React Tutuorial and  Projects Course',
+        text: 'React Tutuorial and Projects Course',
         path: 'https://www.udemy.com/course/react-tutorial-and-projects-course/'
     }, {
         id: 5,
